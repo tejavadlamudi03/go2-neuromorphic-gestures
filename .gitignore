@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Recordings, datasets and training outputs (shared separately, not source)
+data/
+runs/
+*.zip
+
+# FPGA firmware and board weights (built per job on riversdk.dev, not source)
+firmware-*.tar.gz
+*.bit.bin
+*.dtbo
+weights.txt
+weights.json
+*parameters*.txt
+
+# Go2 3D model for RViz (downloaded by ros2/rviz/fetch_go2_model.sh)
+ros2/rviz/meshes/
+ros2/rviz/go2.urdf
+ros2/rviz/go2_description.urdf
+
+# ROS 2 / colcon
+build/
+install/
+log/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
